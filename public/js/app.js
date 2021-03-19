@@ -1,5 +1,3 @@
-console.log('client side java script is loaded')
-
 // fetch('http://puzzle.mead.io/puzzle').then((response)=>{
 //   response.json().then((data)=>{
 //     console.log(data)
@@ -27,13 +25,15 @@ form.addEventListener('submit',(e)=>{
   console.log(location)
   message1.textContent = 'Loading...'
   message2.textContent = ''
-  fetch('http://localhost:3000/weather?address=' + location+'').then((response)=>{
+
+
+  fetch('/weather?address=' + location+'').then((response)=>{
   response.json().then((data)=>{
     if(data.error){
       return message1.textContent = data.error
     }
     message1.textContent = data.location
-    message2.textContent = data.forecast
+    message2.textContent = data.forecast   
     console.log(data.location)
     console.log(data.forecast)
   })
