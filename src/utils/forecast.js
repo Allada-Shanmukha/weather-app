@@ -12,7 +12,8 @@ const forecast = (address,lat,long,callback)=>{
       callback('check your search, something wrong',undefined)
     }
     else{
-      callback(undefined, 'It is currently '+ response.body.current.temperature + ' degrees out there in ' +address)
+      callback(undefined, 'It is currently '+ response.body.current.temperature + ' degrees out there in '+address )
+      // callback(undefined, response)
     }
   })
 }

@@ -1,7 +1,7 @@
 body {
     color: #333333;
     font-family: arial;
-    max-width: 750px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 0 16px;
 
@@ -41,15 +41,22 @@ header a {
     width: 250px;
 }
 
-input{
+input {
     border: 1px solid #cccccc;
-    padding: 2px;
+    padding: 8px;
 }
 
-button{
+button {
     cursor: pointer;
     border: 1px solid #888888;
     background: #888888;
     color: white;
-    padding: 2px;
+    padding: 8px;
+}
+
+.main-content #about1 {
+    width: 500px;
+}
+#help1 {
+    width: 500px;
 }
